@@ -1,9 +1,19 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 
-export default function Home() {
+async function getData() {
+  const res = await fetch(`${process.env.API}/todos/1`)
+  if (!res.ok) {
+    throw new Error('Failed to fetch data')
+  }
+  return res.json()
+}
+
+export default async function Home() {
+  const data = await getData()
   return (
     <main className={styles.main}>
+      <p>UserID: {data.userId}</p>
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
