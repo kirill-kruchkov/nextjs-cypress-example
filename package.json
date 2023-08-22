@@ -6,7 +6,8 @@
     "dev": "next dev -p 8080",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cypress:open": "mockttp -c \"cypress open .\""
   },
   "dependencies": {
     "eslint": "8.47.0",
@@ -16,6 +17,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "cypress": "^12.17.4"
+    "cypress": "^12.17.4",
+    "mockttp": "^3.9.1"
   }
 }
