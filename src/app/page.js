@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styles from './page.module.css'
 
 async function getData() {
-  const res = await fetch(`${process.env.API}/todos/1`)
+  const res = await fetch(`${process.env.API}/todos/1`, { cache: 'no-store' })
   if (!res.ok) {
     throw new Error('Failed to fetch data')
   }
