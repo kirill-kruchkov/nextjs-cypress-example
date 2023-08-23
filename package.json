@@ -17,7 +17,15 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "@cypress/webpack-preprocessor": "^5.17.1",
+    "babel-loader": "^9.1.3",
+    "buffer": "^6.0.3",
     "cypress": "^12.17.4",
-    "mockttp": "^3.9.1"
+    "mockttp": "^3.9.1",
+    "stream-browserify": "^3.0.0",
+    "url": "^0.11.1",
+    "webpack": "^5.88.2"
   }
 }
